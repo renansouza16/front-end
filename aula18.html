@@ -1,74 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 18</title>
-    <style>
-        body{
-background-color: rgb(76, 161, 189);
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-}
-h1{
-    color: darkblue;
-background-color:rgb(150, 144, 238);
-
-}
-h2{
-    color: rgba(21, 21, 199, 0.705);
-background-color:rgb(144, 238, 225);
-  
-}
-p{
-text-align: justify;
-}
-
-    </style>
-</head>
-<body>
-    <h1>Cápitulo 1</h1>
-<h2>Cápitulo 1.1</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Dolore ex rem tempore, saepe ad nisi fugiat tenetur commodi,
-cum provident quae magni quibusdam ipsa expedita vitae voluptas
-quidem laboriosam impedit!</p>
-<h2>Cápitulo 1.2</h2>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-Ipsam corrupti nostrum at laboriosam porro aperiam dolore odit,
-hic id itaque aut sequi quas fugit doloribus nulla. Officiis a
-ipsa sint.</p>
-<h1>Cápitulo 2</h1>
-<h2>Cápitulo 2.1</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Placeat nostrum doloremque aut excepturi commodi nobis
-consequuntur voluptas hic ratione ad possimus ducimus iusto,
-odit nisi porro? Vero numquam dolores explicabo?</p>
-
-</body>
-</html>
-______________________________________________________________________
+pag 1
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Estilos inline</title>
-<style> /* estilo interno*/
-body{
-background-color: lightblue;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-}
+<title> Estilos externos</title>
+<link rel="stylesheet" href="style.css"> <!--css externo-->
+<style>
 h1{
-color: darkblue;
-background-color:lightgreen;
-}
-h2{
-color: darkred;
-}
-p{
-text-align: justify;
+text-decoration: underline; /*deixar o texto sublinhado*/
 }
 </style>
 </head>
@@ -90,5 +30,44 @@ ipsa sint.</p>
 Placeat nostrum doloremque aut excepturi commodi nobis
 consequuntur voluptas hic ratione ad possimus ducimus iusto,
 odit nisi porro? Vero numquam dolores explicabo?</p>
+<p style="text-align: right;"><a href="pagina02.html" target="_self"> Ir para á pagina02</a></p>
 </body>
 </html>
+
+pag 2
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segunda página</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Segunda página</h1>
+<h2>Teste de estilos</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nisi et laborum quam voluptates reprehenderit enim ipsum quidem inventore? Dolor velit in modi provident. Dolores fuga architecto incidunt iusto laboriosam!</p>
+<p><a href="index.html">voltar</a></p>
+</body>
+</html>
+
+css
+
+@charset "UTF-8";/*codificação padrão de css externo*/
+
+body{
+background-color: lightgoldenrodyellow;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+h1{
+color: maroon;
+background-color:darkgoldenrod;
+}
+h2{
+color: darkred;
+}
+p{
+text-align: justify;
+}
